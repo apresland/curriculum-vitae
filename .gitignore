@@ -11,3 +11,7 @@
 ## Intermediate documents:
 *.dvi
 *-converted-to.*
+
+## Output documents
+/src/*.pdf
+/src/*.synctex.gz
