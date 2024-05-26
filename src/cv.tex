@@ -7,6 +7,9 @@
 % A4 paper size by default, use 'letterpaper' for US letter
 \documentclass[11pt, a4paper]{awesome-cv}
 
+\usepackage{fontspec}
+\usepackage{fontawesome}
+
 % Configure page margins with geometry
 \geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
 
@@ -49,12 +52,13 @@
 %	CV/RESUME CONTENT
 %	Each section is imported separately, open each file in turn to modify content
 %-------------------------------------------------------------------------------
-\input{cv/objective.tex}
+\input{cv/summary.tex}
+%\input{cv/objective.tex}
 \input{cv/experience.tex}
-\pagebreak
 \input{cv/skills.tex}
+%\pagebreak
 \input{cv/education.tex}
-\input{cv/projects.tex}
+%\input{cv/projects.tex}
 \input{cv/courses.tex}
 \input{cv/certifications.tex}
 

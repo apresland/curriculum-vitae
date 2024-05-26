@@ -1,1 +1,7 @@
 Adapted from: https://github.com/posquit0/Awesome-CV
+
+## Installing
+sudo apt install texlive-xetex
+
+## Running
+xelatex cv.tex

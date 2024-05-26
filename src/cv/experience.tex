@@ -10,34 +10,58 @@
 \begin{cventries}
 
 %-------------------------------------------------------------------------------
-  \cventry
-    {AxonVIBE AG.} % Organization
-    {Software Engineer (Data)} % Job title
-    {Luzern, Switzerland} % Location
-    {2018 - 2021} % Date(s)
-    {
-      \begin{cvitems} % Description
-        \item {
-            Behavioural pattern detection for a location based contextual platform
-            using machine learning models built from mobile sensor time data 
-            (GNSS/IMU) and deployed to AWS and Mobile SDK.}
-        \item {
-            Trained, and deployed Neural Networks, Gradient Boosting Machines, Spatio-Temporal 
-            Clustering and Graphical Models (Markov).}
-        \item {
-            Constructed serverless injestion for data-monitoring, anomaly detection, 
-            and feature extraction (Apache Beam, AWS Lambda, Batch and S3).}
-        \item {
-            Developed hierarchical clustering algorithms for Significant Location Detection 
-            and productionized them
-            as a backend service in Java with ETL, SQL data connectors and Spring Boot REST interface.}
-      \end{cvitems}
-    }
+\cventry
+{Travizory Border Security SA.} % Organization
+{Machine Learning Engineer (Computer Vision)} % Job title
+{Neuchatel, Switzerland} % Location
+{2022 - 2024} % Date(s)
+{
+  \begin{cvitems} % Description
+    \item {
+    Architected a real-time video ingestion and video inference platform running on 
+    bare-metal Kubernetes as part of an edge-to-cloud Digital Identity Management 
+    System. The systems microservices archicture used an high speed ZeroMQ based event bus for data 
+    throughput, FastAPI to provide management REST endpoints,and WebSockets to 
+    serve a stream of biometric events to frontend clients.}
+    \item {
+    Implemented offline data processing workflows runing on kubernetes using 
+    distributed task queues to synchronize data in AWS 
+    to on-premises persistence using MinIO object stores, MariaDB using Celery tasks. 
+    The workflows consumed biometric images with metadata, extracted face embeddings and built 
+    embedding vector indexes that were used for online face similarity search.}
+    \item {
+    Developed ingestion pipelines for real-time video from GigE Vision industrial cameras 
+    directly into bare-metal Kubernetes clusters using macvlan networking and Multus CNI. 
+    The video streams were used for biometric face detection at airport borders achieving 
+    100 ms recognition latency at 30 FPS.}
+  \end{cvitems}
+}
+
+%-------------------------------------------------------------------------------
+\cventry
+  {AxonVIBE AG.} % Organization
+  {Data Scientist (Remote Sensing)} % Job title
+  {Luzern, Switzerland} % Location
+  {2018 - 2021} % Date(s)
+  {
+    \begin{cvitems} % Description
+      \item {
+          Constructed serverless real-time time-series sensor data ingestion (GPS/IMU) based on AWS Lambda and AWS Batch to 
+          provide windowed feature extraction, data-monitoring, anomaly detection using 
+          Apache Beam and Tensorflow TFX.}
+      \item {
+          Developed algorithms and data models for a set of Spring Boot microservices that perform hierarchical 
+          spatiotemporal clustering for Significant Location and user trajectory detection for a location based contextual platform
+          using machine learning models to infer user behavioral patterns}
+      \item {
+          Developed ML pipelines for hyper-parameter search, training and evaluating of Neural Networks, Random Forests and Gradient Boosting Machines.}
+    \end{cvitems}
+  }
 
 %-------------------------------------------------------------------------------
 \cventry
 {bbv Software Services AG.} % Organization
-{Senior Software Engineer (C++)} % Job title
+{Senior Software Engineer (C++/Real-Time)} % Job title
 {Luzern, Switzerland} % Location
 {2010 - 2018} % Date(s)
 {
@@ -100,7 +124,7 @@
 %-------------------------------------------------------------------------------
 \cventry
 {H. H. Wills Physics Laboratory, University of Bristol} % Organization
-{Post Doctoral Research Associate (Experimental Particle Physics)} % Job Title
+{Post Doctoral Research Associate (Particle Physics)} % Job Title
 {Geneva, Switzerland} % Location
 {2001 - 2003} % Date(s)
 {
@@ -120,7 +144,7 @@
 %-------------------------------------------------------------------------------
 \cventry
 {H. H. Wills Physics Laboratory, University of Bristol} % Organization
-{Doctoral Researcher (Experimental Particle Physics)} % Job Title
+{Doctoral Researcher (Particle Physics)} % Job Title
 {Bristol, UK} % Location
 {1998 - 2001} % Date(s)
 {
