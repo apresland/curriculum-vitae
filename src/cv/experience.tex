@@ -18,22 +18,22 @@
 {
   \begin{cvitems} % Description
     \item {
-    Architected a real-time video ingestion and video inference platform running on 
+    Architected a real-time video inference platform running on 
     bare-metal Kubernetes as part of an edge-to-cloud Digital Identity Management 
-    System. The systems microservices archicture used an high speed ZeroMQ based event bus for data 
-    throughput, FastAPI to provide management REST endpoints,and WebSockets to 
+    System. The microservices archicture used a high speed ZeroMQ based event bus for data 
+    throughput. FastAPI provided management REST endpoints, and WebSockets to 
     serve a stream of biometric events to frontend clients.}
     \item {
-    Implemented offline data processing workflows runing on kubernetes using 
-    distributed task queues to synchronize data in AWS 
-    to on-premises persistence using MinIO object stores, MariaDB using Celery tasks. 
-    The workflows consumed biometric images with metadata, extracted face embeddings and built 
-    embedding vector indexes that were used for online face similarity search.}
+    Offline data management and data processing workflows runing on kubernetes with 
+    scalable distributed task queues to synchronize data in AWS S3 
+    to on-premises MinIO object stores and MariaDB using Celery tasks and Redis. 
+    The workflows consumed biometric image objects, extracted and store 
+    face embeddings and built vector indexes used for online vector similarity search.}
     \item {
-    Developed ingestion pipelines for real-time video from GigE Vision industrial cameras 
-    directly into bare-metal Kubernetes clusters using macvlan networking and Multus CNI. 
+    Developed pipelines for real-time video acquisition from GigE Vision industrial cameras 
+    ingesting directly into bare-metal Kubernetes clusters using macvlan networking and Multus CNI. 
     The video streams were used for biometric face detection at airport borders achieving 
-    100 ms recognition latency at 30 FPS.}
+    100 ms face recognition latency at 30 FPS.}
   \end{cvitems}
 }
 
@@ -46,15 +46,18 @@
   {
     \begin{cvitems} % Description
       \item {
-          Constructed serverless real-time time-series sensor data ingestion (GPS/IMU) based on AWS Lambda and AWS Batch to 
-          provide windowed feature extraction, data-monitoring, anomaly detection using 
-          Apache Beam and Tensorflow TFX.}
+          Developed cloud based real-time serverless time-series data ingestion 
+          from mobile device sensors (GPS/IMU) using AWS Lambda and Batch. These 
+          provided sliding window feature extraction, data-monitoring, and anomaly 
+          detection for building ML models and used Apache Beam and Tensorflow TFX.}
       \item {
-          Developed algorithms and data models for a set of Spring Boot microservices that perform hierarchical 
-          spatiotemporal clustering for Significant Location and user trajectory detection for a location based contextual platform
-          using machine learning models to infer user behavioral patterns}
+          Developed data models and unsupervised learning for a set of Spring Boot 
+          microservices that perform hierarchical spatiotemporal clustering for 
+          Significant Location and user trajectory detection for a location based 
+          contextual platform infering users travel behavioral patterns}
       \item {
-          Developed ML pipelines for hyper-parameter search, training and evaluating of Neural Networks, Random Forests and Gradient Boosting Machines.}
+          Developed pipelines for hyper-parameter search, model training and model 
+          evaluating for Neural Networks, Random Forests and Gradient Boosting Machines.}
     \end{cvitems}
   }
 
@@ -67,22 +70,21 @@
 {
   \begin{cvitems} % Description
     \item {
-        Consultant Engineer collaborating in Agile projects at multinational
+        Consultant Engineer involved in Agile projects for multinational
         customers. Used Scrum and Kanban to iteratively deliver 
         value. Integrated constantly, refactored ruthlessly, and avoided smells. 
-        Favoured SOLID principles and relied on design patterns to produce clean, 
+        Favoured SOLID principles. Relied on design patterns to produce clean, 
         testable code measured using static analysis.
         }
     \item {
-        Developed in modern C++ for embedded Linux and RTOS targets and 
-        multiple architectures (ARM/PowerPC) with cross-toolchains. Applications 
-        included Fieldbus based realtime distributed controls for industrial robotics, 
-        and interfacing with Java Card algorithms running on tamper-resistant smartcards 
-        for security modules (SSL/TLS) embedded in Industrial IoT Gateways.}
+      Developed in modern C++ for embedded Linux and RTOS targets under
+      multiple architectures (ARM/PowerPC) and with cross-toolchains. Included 
+      Fieldbus based realtime distributed controls for industrial robotics, 
+      interfacing with Java Card algorithms running on tamper-resistant smartcards 
+      for security modules (SSL/TLS) embedded in Industrial IoT Gateways.}
     \item {
-      Quality Assurance Engineering for medical devices and mobile apps
-      with functional specification written in Cucumber, 
-      test automation with Jenkins CI and Appium. 
+      Developed a system to automated Quality Assurance for medical mobile apps
+      running on multiple device models (Android, iOS) using Java, Cucumber specifications, Jenkins CI and Appium. 
       }  
   \end{cvitems}
 }
@@ -90,17 +92,17 @@
 %-------------------------------------------------------------------------------
 \cventry
 {Hagenbuch Hydraulic Systems AG.} % Organization
-{Software Project Leader} % Job title
+{Software Engineer (C++)} % Job title
 {Luzern, Switzerland} % Location
 {2006 - 2010} % Date(s)
 {
   \begin{cvitems} % Description
     \item {
-      Development of PID based real-time motion control for 6-DOF parallel 
+      Development of real-time motion controls for 6-DOF parallel 
       kinematic manipulators (Hexapods) using Fieldbus distributed controllers 
-      and signals from positional encoders and force sensors.}
+      and input signals from positional encoders and force sensors.}
     \item {
-      Real-time signal processing in the time and frequency domains for 
+      Online signal processing and analytics in the time and frequency domains for 
       vibration analytics systems. Spectral analysis, and development of 
       real-time data visualization applications.}
   \end{cvitems}
@@ -115,13 +117,18 @@
 {
   \begin{cvitems} % Description
     \item {
-      Monte-Carlo simulation of radiation induced Single Event Errors (SSE) and 
+      Monte-Carlo simulation of intranuclear cascades, multi-particle 
+      transport to predict radiation induced Single Event Errors (SSE) and 
       Total Ionizing Dose (TID) in LHC control electronics under 
-      beam accident scenarios using intranuclear cascades, multi-particle 
-      transport and detailed 3D combinatorial models.}
+      beam accident scenarios and ensure correct LHC operation.}
+      \item {
+        Execution of long time-frame scientific workloads on the CERN HPC 
+        batch compute system.
+        }  
       \item{
-      Scientific data analysis and visualization in Matlab. Presentation of findings
-      to the LHC collaboration to inform the LHC design and at international scientific conferences.}
+      Scientific data analysis and visualization in Matlab prior to presentation 
+      of findings to the LHC collaboration and international scientific conferences
+      to inform the LHC accelerator design effort.}
   \end{cvitems}
 }
 
@@ -135,14 +142,16 @@
   \begin{cvitems} % Description
     \item {
       Member of the LHCb collaboration searching for the source of matter-antimatter 
-      asymmetry in the universe. I helped develop the Hybrid Photon Detector (HPD) based 
-      Ring Imaging Cherenkov Detector (RICH) providing particle Identity (PID) 
-      for LHCb physics event reconstruction.}
+      asymmetry in the universe.} 
     \item {
-      Developed HPD simulation and physics event reconstruction code (C++) for 
-      the LHCb Data Processing Framework and helped define Definition of the 
-      LHCb Physics Data Model. Performed Scientific Data Analysis using ROOT Data 
-      Analysis Framework for physics reach studies.
+      Prototyping of a Hybrid Photon Detector (HPD) based Ring Imaging Cherenkov 
+      Detector (RICH) that provides particle Identity (PID) for physics event 
+      reconstruction following LHC proton-proton collisions.}
+    \item {
+      Developed simulations of HPD response signals and RICH physics event 
+      reconstruction software for the LHCb Data Processing Framework and helped 
+      define the Physics Data Model. Performed Scientific Data Analysis using 
+      ROOT Data Analysis Framework.
         }
   \end{cvitems}
 }
@@ -156,15 +165,16 @@
 {
   \begin{cvitems} % Description
     \item {
-        Member of the CMS collaboration focussed on the search for the Higgs Boson
-        helping develop the Avalanche Photodiode (APD) and Vacuum Phototriode (VPT) 
-        based Electromagnetic Calorimetor (ECAL). This is used to measure the energy 
-        of photons and electrons in cascades of sub-atomic particles produced by 
-        proton collisions.}
-      \item {
-        Development of algorithms to reconstruct relativistic electron trajectories 
-        using Kalman filters and electron energy by photon counting based on Geant4 
-        Monte Carlo simulation of LHC physics events.}
+      Member of the CMS collaboration focussed on the search for the Higgs at the LHC.}
+    \item {
+      Prototyping of an Avalanche Photodiode (APD) and Vacuum Phototriode (VPT) 
+      based Electromagnetic Calorimetor (ECAL) used to measure the energy 
+      of photons and electrons in sub-atomic particles cascades produced by 
+      LHC proton-proton collisions.}
+    \item {
+      Development of event reconstruction algorithms for relativistic electron trajectories 
+      using Kalman filters and electron energy clustering based on Geant4 simulation 
+      of detector response from LHC physics events.}
   \end{cvitems}
 }
 
